@@ -5,6 +5,10 @@ struct Planet {
     std::string name;
     double masse;
     double durchmesser;
+    void ausgabe()
+    {
+        std::cout << "Name=" << name << "\tMasse=" << masse << "\tDurchmesser=" << durchmesser << std::endl;
+    }
 };
 
 class Sonnensystem {
@@ -17,6 +21,19 @@ public:
             planeten[i].masse = -1;
             planeten[i].durchmesser = -1;
         }
+    }
+
+    void ausgabe()
+    {
+        for (int i = 0; i < 9; i++) {
+            planeten[i].ausgabe();
+
+        }
+    }
+
+    void setPlaneten(Planet planeten[], size_t anzahlDerPlaneten)
+    {
+	    
     }
 };
 
