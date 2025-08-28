@@ -4,13 +4,22 @@ private:
     unsigned int uiDrehzahl;
     
 public:
-    CWindgenerator() {}
+    CWindgenerator() {
+        uiDrehzahl = 64;
+    }
     unsigned int getDrehzahl() {
         return uiDrehzahl;
+    }
+
+    bool Drehzahl3040() {
+        return uiDrehzahl <= 40 && uiDrehzahl >= 30;
     }
 };
 int main()
 {
-    std::cout << "Hello World!\n";
+    CWindgenerator Windgenerator;
+
+
+    std::cout << Windgenerator.Drehzahl3040() << std::endl;
 }
 

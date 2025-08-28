@@ -10,14 +10,21 @@ private:
 
 public:
 
-	Schwein() {
+	/*Schwein() {
 		name = "Nobody";
 		gewicht = 10;
-	}
-	Schwein(std::string name) {
+	}*/
+
+	explicit Schwein(std::string name="Nobody") {
 		Schwein::name = name;
 		gewicht = 10;
 	}
+
+	~Schwein() {
+		std::cout << name << " RIP.\n QUiiiiieeeeekkkkk" << std::endl;
+	}
+
+
 	void setName(std::string neuerName) {
 		if (neuerName == "Elsa") return;
 		name = neuerName;
