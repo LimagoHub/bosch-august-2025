@@ -33,8 +33,23 @@ public:
 
     void setPlaneten(Planet planeten[], size_t anzahlDerPlaneten)
     {
-	    
+	    for (int i = 0; i < anzahlDerPlaneten; ++i)
+	    {
+            Sonnensystem::planeten[i] = planeten[i];
+	    }
     }
+
+    double getMasse()
+    {
+        double masse = 0;
+        for (int i = 0; i < 9; ++i)
+        {
+            if (planeten[i].masse > 0) {
+                masse += planeten[i].masse;
+            }
+        }
+        return masse;
+    } 
 };
 
 int main()
@@ -49,6 +64,7 @@ int main()
     };
 
     Sonnensystem sol;
+    sol.setPlaneten(planeten, 4);
     sol.ausgabe();
 
     std::cout << "Hello World!\n";
