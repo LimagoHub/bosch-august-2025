@@ -57,7 +57,7 @@ public:
 		setY(getY() - 1);
 	}
 
-	void ausgabe() const{
+	virtual void ausgabe() const{
 		std::cout << "X = " << getX() << ", Y = " << getY() << std::endl;
 	}
 };

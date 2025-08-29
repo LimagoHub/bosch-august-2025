@@ -1,12 +1,22 @@
 #include <iostream>
+
+#include "Kreis.h"
 #include "Punkt.h"
 int main()
 {
-    Punkt p1{ 2.9, -4.1 };
+    /*Kreis k;
+    k.set_radius(100);
     for (size_t i = 0; i < 11; i++)
     {
-        p1.rechts(0.5);
-        p1.ausgabe();
+        k.rechts(0.5);
+        k.ausgabe();
     }
+	*/
+
+    char einWort[] = "Hallo";
+
+    float x = 3.14540956874568756798;
+    printf("###%-10.2f###%s",x, einWort);
+
    
 }

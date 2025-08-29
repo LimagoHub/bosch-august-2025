@@ -130,6 +130,7 @@
     <ClCompile Include="Geometrie.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Kreis.h" />
     <ClInclude Include="Punkt.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
